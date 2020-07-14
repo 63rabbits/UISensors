@@ -1,0 +1,62 @@
+# UISensors
+
+The information is obtained from the following sensors on iOS Device.
+
+次のデバイス・センサーから情報を取得する。
+
+### Ambient Light / 環境光
+
+Get the ambient light intensity of the device. (intensity = 0.0 - 1.0)
+
+周辺光の強度を取得する。強度は0.0 - 1.0の範囲。
+
+### Proximity / 近接
+
+Get the proximity status of an object. (true/false)
+
+物体の近接状況を取得する。近接している場合にTrue。
+
+### Air Pressure / 気圧
+
+Get the air pressure (hPa) and relative altitude (m).
+
+気圧(hPa)と相対高度(m)を取得する。
+
+高度は計測開始時を0mとした相対値である。
+
+### GPS
+
+Get the current location (measurement time, latitude, longitude), altitude (m) and moving speed (m/s).
+
+現在地（計測時刻、経緯度）、高度(m)および移動速度(m/s)を取得する。
+
+### Magnetic Heading / 磁気
+
+Get the angle from magnetic north/true north to device head. (arc degree)
+
+磁北／真北からデバイス・ヘッドへの角度（度数法）を取得する。
+
+### Acceleration / 加速度
+
+Get the acceleration of the device (x/y/z-directions) can be obtained. (m/s^2)
+
+デバイスのx/y/z方向への加速度（m/s^2）を取得する。
+
+### Gyro / ジャイロ
+
+Get the angular velocity of the device (pitch, roll, yaw). (rad/s)
+
+デバイスのピッチ、ロール、ヨーの角速度(rad/s）を取得する。
+
+### MicroPhone / マイク
+
+Get the sound intensity with RMS power (peak and average). (0.0 - 1.0 or dB)(RMS : root mean square)
+
+音の強度を取得する。強度は0.0 - 1.0の範囲、または、dB。
+
+### Shake Motion / シェイク・モーション
+
+Detects shake motion and switches the button state.
+
+シェイク・モーションを検出し、ボタンの状態を反転する。
+
