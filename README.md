@@ -1,5 +1,10 @@
 # UISensors
 
+| | |
+|:-------------------------:|:-------------------------:|
+|<img src=https://github.com/63rabbits/UISensors/blob/master/Sensors-0001.png width="300">
+|<img src=https://github.com/63rabbits/UISensors/blob/master/Sensors-0002.png width="300">  |
+
 The information is obtained from the following sensors on iOS Device.
 
 次のデバイス・センサーから情報を取得する。
