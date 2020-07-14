@@ -48,7 +48,7 @@ Get the angular velocity of the device (pitch, roll, yaw). (rad/s)
 
 デバイスのピッチ、ロール、ヨーの角速度(rad/s）を取得する。
 
-### MicroPhone / マイク
+### Microphone / マイク
 
 Get the sound intensity with RMS power (peak and average). (0.0 - 1.0 or dB)(RMS : root mean square)
 
