@@ -24,7 +24,7 @@ Get the air pressure (hPa) and relative altitude (m).
 
 高度は計測開始時を0mとした相対値である。
 
-### Location
+### Location / 測位
 
 Get the current location (measurement time, latitude, longitude), altitude (m) and moving speed (m/s).
 
