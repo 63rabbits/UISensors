@@ -739,6 +739,13 @@ extension ViewController: CLLocationManagerDelegate {
 
         // magnetic flux density
         let t = sqrt(newHeading.x * newHeading.x + newHeading.y * newHeading.y + newHeading.z * newHeading.z)
+        magFluxDensity.textColor = .label
+        if ((t < 24.0) || (66.0 < t)) {         // latitude 0 - 90
+            magFluxDensity.textColor = .systemRed
+        }
+        else if ((t < 44.0) || (51.0 < t)) {    // okinawa - hokkaido
+            magFluxDensity.textColor = .systemOrange
+        }
         magFluxDensity.text = String(format: "Dens.= %.3f uT", t)
     }
 
