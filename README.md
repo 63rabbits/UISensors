@@ -36,9 +36,9 @@ Get the current location (measurement time, latitude, longitude), altitude (m) a
 
 ### Compass / 磁気
 
-Get the angle from magnetic north/true north to device head. (arc degree)
+Obtain the angle (in degrees) from the magnetic north/true north to the device head and the magnetic flux density (uT) in the x/y/z directions.
 
-磁北／真北からデバイス・ヘッドへの角度（度数法）を取得する。
+磁北／真北からデバイス・ヘッドへの角度（度数法）とx/y/z方向への磁束密度（uT）を取得する。
 
 ### Acceleration / 加速度
 
