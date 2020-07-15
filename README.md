@@ -34,7 +34,7 @@ Get the current location (measurement time, latitude, longitude), altitude (m) a
 
 現在地（計測時刻、経緯度）、高度(m)および移動速度(m/s)を取得する。
 
-### Magnetic Heading / 磁気
+### Compass / 磁気
 
 Get the angle from magnetic north/true north to device head. (arc degree)
 
