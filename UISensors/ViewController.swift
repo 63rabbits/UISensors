@@ -29,6 +29,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var magHeadingValue: UILabel!
     @IBOutlet weak var trueNorthValue: UILabel!
+    @IBOutlet weak var magFluxDensity: UILabel!
 
     @IBOutlet weak var accelerationX: UILabel!
     @IBOutlet weak var accelerationY: UILabel!
@@ -312,6 +313,18 @@ class ViewController: UIViewController {
     // Note : You need to set "Privacy - Location When In Use Usage Description" on Info.plist.
 
     func locationControl(_ state: Bool) {
+        // CLLocationManager.locationServicesEnabled() return true if location service is ON.
+//        guard CLLocationManager.locationServicesEnabled() else {
+//            locationButton.isEnabled = false
+//            locationTime.text = ""
+//            latitudeValue.text = ""
+//            longitudeValue.text = ""
+//            locationAccuracyValue.text = ""
+//            altitudeValue.text = ""
+//            speedValue.text = ""
+//            return
+//        }
+
         if (locationManagerForLoc == nil) {
             locationManagerForLoc = CLLocationManager()
             locationManagerForLoc!.delegate = self
@@ -386,6 +399,7 @@ class ViewController: UIViewController {
         buttonON(magHeadButton, state: state)
         magHeadingValue.text = ""
         trueNorthValue.text = ""
+        magFluxDensity.text = ""
     }
 
     // MARK: - Acceleration
@@ -722,6 +736,10 @@ extension ViewController: CLLocationManagerDelegate {
         else {
             trueNorthValue.text = "T.N.= ?"
         }
+
+        // magnetic flux density
+        let t = sqrt(newHeading.x * newHeading.x + newHeading.y * newHeading.y + newHeading.z * newHeading.z)
+        magFluxDensity.text = String(format: "Dens.= %.3f uT", t)
     }
 
 
@@ -759,6 +777,7 @@ extension ViewController: CLLocationManagerDelegate {
                 case .headingFailure:
                     magHeadingValue.text = "M.N.= Failure"
                     trueNorthValue.text = ""
+                    magFluxDensity.text = ""
 
                 default: break
             }

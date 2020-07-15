@@ -19,10 +19,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-A4-SKs">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3e-4j-fQR">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="41.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Ambient Light"/>
                                                 <connections>
@@ -30,7 +30,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mj-AS-rga">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="41.5"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -38,10 +38,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="l8s-wc-iTS">
-                                        <rect key="frame" x="0.0" y="45.5" width="375" height="41.5"/>
+                                        <rect key="frame" x="0.0" y="44" width="375" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rff-9S-Apc">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="41.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Proximity"/>
                                                 <connections>
@@ -49,7 +49,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-ux-lZ2">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="41.5"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -57,10 +57,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Xu7-Xt-V2Q">
-                                        <rect key="frame" x="0.0" y="91" width="375" height="47"/>
+                                        <rect key="frame" x="0.0" y="88" width="375" height="45.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suB-Wf-Zx0">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="47"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="45.5"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Air Pressure"/>
                                                 <connections>
@@ -68,16 +68,16 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="28Q-sV-Hak">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="47"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="45.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZv-4P-8qZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5M-3Q-EFD">
-                                                        <rect key="frame" x="0.0" y="23.5" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="22.5" width="186.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -87,10 +87,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JtZ-4v-gdH">
-                                        <rect key="frame" x="0.0" y="142" width="375" height="140.5"/>
+                                        <rect key="frame" x="0.0" y="137.5" width="375" height="136"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqc-NL-qGa">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="140.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="136"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Location"/>
                                                 <connections>
@@ -98,40 +98,40 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R6n-Pz-88k">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="140.5"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="136"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB7-13-oph">
-                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCK-Z6-ciI">
-                                                        <rect key="frame" x="0.0" y="23.5" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="22.5" width="186.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgZ-Io-GEf">
-                                                        <rect key="frame" x="0.0" y="47" width="186.5" height="23"/>
+                                                        <rect key="frame" x="0.0" y="45.5" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJv-G0-p04">
-                                                        <rect key="frame" x="0.0" y="70" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="68" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAY-NJ-jMB">
-                                                        <rect key="frame" x="0.0" y="93.5" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="90.5" width="186.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhu-iO-Vpc">
-                                                        <rect key="frame" x="0.0" y="117" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="113.5" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -141,10 +141,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dTB-p8-WCc">
-                                        <rect key="frame" x="0.0" y="286.5" width="375" height="47"/>
+                                        <rect key="frame" x="0.0" y="277.5" width="375" height="68"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTC-Mb-rto">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="47"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Compass"/>
                                                 <connections>
@@ -152,16 +152,22 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pi9-DO-caz">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="47"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="68"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcL-jW-O6J">
-                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usg-Ht-U7d">
-                                                        <rect key="frame" x="0.0" y="23.5" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="22.5" width="186.5" height="23"/>
+                                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPV-kB-6tG">
+                                                        <rect key="frame" x="0.0" y="45.5" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -171,10 +177,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jn4-28-yg9">
-                                        <rect key="frame" x="0.0" y="337.5" width="375" height="70.5"/>
+                                        <rect key="frame" x="0.0" y="349.5" width="375" height="68"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-iB-8Yc">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="70.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Acceleration"/>
                                                 <connections>
@@ -182,22 +188,22 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DYk-Ak-AH3">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="70.5"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="68"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wz-Sc-rSF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZ1-XA-W5I">
-                                                        <rect key="frame" x="0.0" y="23.5" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="22.5" width="186.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4l-ng-MtU">
-                                                        <rect key="frame" x="0.0" y="47" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="45.5" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -207,10 +213,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JWO-W6-b7b">
-                                        <rect key="frame" x="0.0" y="412" width="375" height="70.5"/>
+                                        <rect key="frame" x="0.0" y="421.5" width="375" height="68"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To3-uI-MJJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="70.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Gyro"/>
                                                 <connections>
@@ -218,22 +224,22 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XEc-Rr-ivW">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="70.5"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="68"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yau-ov-6pZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfM-Iy-uNV">
-                                                        <rect key="frame" x="0.0" y="23.5" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="22.5" width="186.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwW-Q6-90C">
-                                                        <rect key="frame" x="0.0" y="47" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="45.5" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -243,10 +249,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="148-wb-YpL">
-                                        <rect key="frame" x="0.0" y="486.5" width="375" height="70.5"/>
+                                        <rect key="frame" x="0.0" y="493.5" width="375" height="68"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CV9-sf-cig">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="70.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Attitude (Acc+Gyro)"/>
                                                 <connections>
@@ -254,22 +260,22 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CZw-hm-Ch4">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="70.5"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="68"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X4-LV-aio">
-                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4de-Ks-YMh">
-                                                        <rect key="frame" x="0.0" y="23.5" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="22.5" width="186.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC3-B8-r4d">
-                                                        <rect key="frame" x="0.0" y="47" width="186.5" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="45.5" width="186.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -279,10 +285,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0h9-1a-5cC">
-                                        <rect key="frame" x="0.0" y="561" width="375" height="106"/>
+                                        <rect key="frame" x="0.0" y="565.5" width="375" height="101.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="726-x7-5MM">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="106"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="101.5"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Microphone"/>
                                                 <connections>
@@ -290,28 +296,28 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="54Y-TA-PwA">
-                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="106"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="186.5" height="101.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAp-eE-rs9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="26.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="25.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTd-aq-gj1">
-                                                        <rect key="frame" x="0.0" y="26.5" width="186.5" height="26.5"/>
+                                                        <rect key="frame" x="0.0" y="25.5" width="186.5" height="25.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTl-Wz-gZg">
-                                                        <rect key="frame" x="0.0" y="53" width="186.5" height="26.5"/>
+                                                        <rect key="frame" x="0.0" y="51" width="186.5" height="25"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdK-or-NEU">
-                                                        <rect key="frame" x="0.0" y="79.5" width="186.5" height="26.5"/>
+                                                        <rect key="frame" x="0.0" y="76" width="186.5" height="25.5"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -355,6 +361,7 @@
                         <outlet property="locationButton" destination="fqc-NL-qGa" id="Uaa-36-y0e"/>
                         <outlet property="locationTime" destination="YB7-13-oph" id="FgX-a6-CBd"/>
                         <outlet property="longitudeValue" destination="rgZ-Io-GEf" id="EBJ-nq-JwU"/>
+                        <outlet property="magFluxDensity" destination="lPV-kB-6tG" id="2S3-v0-RAa"/>
                         <outlet property="magHeadButton" destination="bTC-Mb-rto" id="Q5a-ea-k2b"/>
                         <outlet property="magHeadingValue" destination="jcL-jW-O6J" id="cOX-yp-ZKL"/>
                         <outlet property="micAvgValue" destination="KTd-aq-gj1" id="aPK-lk-DxI"/>
