@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CoreLocation     // for Magnetic Heading, GPS
+import CoreLocation     // for Magnetic Heading, Location
 import CoreMotion       // for Air Pressure, Acceleration, Gyro, Attitude
 import AudioToolbox     // for Microphone
 
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var airPressureValue: UILabel!
     @IBOutlet weak var relativeAltitudeValue: UILabel!
 
-    @IBOutlet weak var gpsTime: UILabel!
+    @IBOutlet weak var locationTime: UILabel!
     @IBOutlet weak var latitudeValue: UILabel!
     @IBOutlet weak var longitudeValue: UILabel!
     @IBOutlet weak var locationAccuracyValue: UILabel!
@@ -66,12 +66,12 @@ class ViewController: UIViewController {
     }
     var altimeter: CMAltimeter?
 
-    var gpsSensor = false
-    @IBOutlet weak var gpsButton: UIButton!
-    @IBAction func gpsButtonAction(_ sender: Any) {
-        gpsControl(!gpsSensor)
+    var locationSensor = false
+    @IBOutlet weak var locationButton: UIButton!
+    @IBAction func locationButtonAction(_ sender: Any) {
+        locationControl(!locationSensor)
     }
-    var locationManagerForGPS: CLLocationManager?
+    var locationManagerForLoc: CLLocationManager?
 
     var magHeadingSensor = false
     @IBOutlet weak var magHeadButton: UIButton!
@@ -143,7 +143,7 @@ class ViewController: UIViewController {
         ambientLightControl(false)
         proximityControl(false)
         airPressureControl(false)
-        gpsControl(false)
+        locationControl(false)
         magHeadingControl(false)
         accelerationControl(false)
         gyroControl(false)
@@ -187,7 +187,7 @@ class ViewController: UIViewController {
         ambientLightControl(!ambientLightSensor)
         proximityControl(!proximitySensor)
         airPressureControl(!airPressureSensor)
-        gpsControl(!gpsSensor)
+        locationControl(!locationSensor)
         magHeadingControl(!magHeadingSensor)
         accelerationControl(!accelerationSensor)
         gyroControl(!gyroSensor)
@@ -307,37 +307,37 @@ class ViewController: UIViewController {
         relativeAltitudeValue.text = ""
     }
 
-    // MARK: - GPS
+    // MARK: - Location
 
     // Note : You need to set "Privacy - Location When In Use Usage Description" on Info.plist.
 
-    func gpsControl(_ state: Bool) {
-        if (locationManagerForGPS == nil) {
-            locationManagerForGPS = CLLocationManager()
-            locationManagerForGPS!.delegate = self
+    func locationControl(_ state: Bool) {
+        if (locationManagerForLoc == nil) {
+            locationManagerForLoc = CLLocationManager()
+            locationManagerForLoc!.delegate = self
         }
 
         if (state) {
-            gpsButtonState(true)
+            locationButtonState(true)
 
-            locationManagerForGPS!.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+            locationManagerForLoc!.desiredAccuracy = kCLLocationAccuracyBestForNavigation
             //            locationManager!.desiredAccuracy = kCLLocationAccuracyBest
-            locationManagerForGPS!.distanceFilter = 5                         // 5 m
-            locationManagerForGPS!.pausesLocationUpdatesAutomatically = true
-            locationManagerForGPS!.allowsBackgroundLocationUpdates = false
+            locationManagerForLoc!.distanceFilter = 5                         // 5 m
+            locationManagerForLoc!.pausesLocationUpdatesAutomatically = true
+            locationManagerForLoc!.allowsBackgroundLocationUpdates = false
 
-            locationManagerForGPS!.startUpdatingLocation()
+            locationManagerForLoc!.startUpdatingLocation()
         }
         else {
-            locationManagerForGPS!.stopUpdatingLocation()
-            gpsButtonState(false)
+            locationManagerForLoc!.stopUpdatingLocation()
+            locationButtonState(false)
         }
-        gpsSensor = state
+        locationSensor = state
     }
 
-    func gpsButtonState(_ state: Bool) {
-        buttonON(gpsButton, state: state)
-        gpsTime.text = ""
+    func locationButtonState(_ state: Bool) {
+        buttonON(locationButton, state: state)
+        locationTime.text = ""
         latitudeValue.text = ""
         longitudeValue.text = ""
         locationAccuracyValue.text = ""
@@ -356,7 +356,7 @@ class ViewController: UIViewController {
             locationManagerForMagHead!.headingFilter = 0.01   // notch = 0.01°
             locationManagerForMagHead!.headingOrientation = .portrait
 
-            // for GPS (Location updating)
+            // for Location (Location updating)
             locationManagerForMagHead!.desiredAccuracy = kCLLocationAccuracyBestForNavigation
             //            locationManagerForMagHead!.desiredAccuracy = kCLLocationAccuracyBest
             locationManagerForMagHead!.distanceFilter = 5                         // 5 m
@@ -656,17 +656,17 @@ extension ViewController: CLLocationManagerDelegate {
         }
     }
 
-    // MARK: GPS
+    // MARK: Location
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
-        guard gpsSensor else { return }
+        guard locationSensor else { return }
 
         let formatter = DateFormatter()
         //        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
         formatter.dateStyle = .short
         formatter.timeStyle = .long
-        gpsTime.text = formatter.string(from: location.timestamp)
+        locationTime.text = formatter.string(from: location.timestamp)
 
         // latitude / longitude
         if (location.horizontalAccuracy >= 0.0) {
@@ -729,10 +729,10 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         let cle = error as! CLError
 
-        if (gpsSensor) {
+        if (locationSensor) {
             switch (cle.code) {
                 case .denied:
-                    gpsTime.text =  ""
+                    locationTime.text =  ""
                     latitudeValue.text = "Location service"
                     longitudeValue.text = "are disabled."
                     locationAccuracyValue.text = ""
@@ -742,7 +742,7 @@ extension ViewController: CLLocationManagerDelegate {
                     let formatter = DateFormatter()
                     formatter.dateStyle = .short
                     formatter.timeStyle = .long
-                    gpsTime.text = formatter.string(from: Date())
+                    locationTime.text = formatter.string(from: Date())
                     latitudeValue.text = "Failure"
                     longitudeValue.text = ""
                     locationAccuracyValue.text = ""

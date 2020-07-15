@@ -94,7 +94,7 @@
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Location"/>
                                                 <connections>
-                                                    <action selector="gpsButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRr-bX-Xgt"/>
+                                                    <action selector="locationButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRr-bX-Xgt"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R6n-Pz-88k">
@@ -146,7 +146,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTC-Mb-rto">
                                                 <rect key="frame" x="0.0" y="0.0" width="186.5" height="47"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Magnetic Heading"/>
+                                                <state key="normal" title="Compass"/>
                                                 <connections>
                                                     <action selector="magHeadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l32-fy-DRJ"/>
                                                 </connections>
@@ -346,14 +346,14 @@
                         <outlet property="attitudePitch" destination="6X4-LV-aio" id="kAJ-me-BND"/>
                         <outlet property="attitudeRoll" destination="4de-Ks-YMh" id="eFG-PV-mrM"/>
                         <outlet property="attitudeYaw" destination="fC3-B8-r4d" id="Ghb-8y-x9g"/>
-                        <outlet property="gpsButton" destination="fqc-NL-qGa" id="Uaa-36-y0e"/>
-                        <outlet property="gpsTime" destination="YB7-13-oph" id="FgX-a6-CBd"/>
                         <outlet property="gyroButton" destination="To3-uI-MJJ" id="sQb-dH-f5t"/>
                         <outlet property="gyroX" destination="yau-ov-6pZ" id="2NI-LW-2Jd"/>
                         <outlet property="gyroY" destination="OfM-Iy-uNV" id="Cnz-g8-Beh"/>
                         <outlet property="gyroZ" destination="CwW-Q6-90C" id="fZ3-pr-YCE"/>
                         <outlet property="latitudeValue" destination="MCK-Z6-ciI" id="aVb-5j-KEn"/>
                         <outlet property="locationAccuracyValue" destination="PJv-G0-p04" id="Y6s-sm-0BS"/>
+                        <outlet property="locationButton" destination="fqc-NL-qGa" id="Uaa-36-y0e"/>
+                        <outlet property="locationTime" destination="YB7-13-oph" id="FgX-a6-CBd"/>
                         <outlet property="longitudeValue" destination="rgZ-Io-GEf" id="EBJ-nq-JwU"/>
                         <outlet property="magHeadButton" destination="bTC-Mb-rto" id="Q5a-ea-k2b"/>
                         <outlet property="magHeadingValue" destination="jcL-jW-O6J" id="cOX-yp-ZKL"/>
