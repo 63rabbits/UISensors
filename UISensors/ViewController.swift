@@ -490,6 +490,8 @@ class ViewController: UIViewController {
 
     // MARK: - Attitude
 
+//    var originAttitude : CMAttitude?
+
     func attitudeControl(_ state: Bool) {
         if (motionManager == nil) {
             motionManager = CMMotionManager()
@@ -508,6 +510,13 @@ class ViewController: UIViewController {
             motionManager!.startDeviceMotionUpdates(using: .xArbitraryZVertical, to: OperationQueue.current!) {
                 (data, error) in
                 guard let attitude = data?.attitude else { return }
+
+//                guard let _ = self.originAttitude else {
+//                    self.originAttitude = attitude
+//                    return
+//                }
+
+//                attitude.multiply(byInverseOf: self.originAttitude!)
                 self.attitudePitch.text = String(format: "pitch= %+.3f" + self.Unit_rad, attitude.pitch)
                 self.attitudeRoll.text = String(format: "roll = %+.3f" + self.Unit_rad, attitude.roll)
                 self.attitudeYaw.text = String(format: "yaw  = %+.3f" + self.Unit_rad, attitude.yaw)
@@ -515,6 +524,7 @@ class ViewController: UIViewController {
         }
         else {
             motionManager!.stopDeviceMotionUpdates()
+//            originAttitude = nil
             attitudeButtonState(false)
         }
         attitudeSensor = state
